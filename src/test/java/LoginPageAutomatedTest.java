@@ -24,6 +24,7 @@ public class LoginPageAutomatedTest {
         // login
         _webdriver.findElement(By.cssSelector("#login")).sendKeys("demo");
         _webdriver.findElement(By.cssSelector("#password")).sendKeys("password123");
+        _webdriver.findElement(By.id("user-loging")).click();
 
         String text = _webdriver.findElement(By.className("navbar-brand")).getText();
         Assert.assertEquals("We are now logged in", "Test project", text);
