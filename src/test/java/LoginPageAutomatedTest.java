@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginButtonWorksTest {
+public class LoginPageAutomatedTest {
 
     private WebDriver _webdriver = new LocalChromeWebDriver().GetWebDriver();
 
@@ -24,7 +24,6 @@ public class LoginButtonWorksTest {
         // login
         _webdriver.findElement(By.cssSelector("#login")).sendKeys("demo");
         _webdriver.findElement(By.cssSelector("#password")).sendKeys("password123");
-         _webdriver.findElement(By.id("user-loging")).click();
 
         String text = _webdriver.findElement(By.className("navbar-brand")).getText();
         Assert.assertEquals("We are now logged in", "Test project", text);
