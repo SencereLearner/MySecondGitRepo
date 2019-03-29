@@ -41,12 +41,12 @@
       <file leaf-file-name="LoginButtonWorksTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LoginButtonWorksTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9859402">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.8963093">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -873,17 +873,11 @@
       <created>1553867140905</created>
       <option name="number" value="Default" />
       <updated>1553867140905</updated>
-      <workItem from="1553867152815" duration="5755000" />
+      <workItem from="1553867152815" duration="6311000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 09h 56m 50s.xml">
-      <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 09h 59m 54s.xml">
-      <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 10h 00m 19s.xml">
       <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
     </history-entry>
@@ -908,9 +902,15 @@
     <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 10h 22m 07s.xml">
       <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 10h 22m 31s.xml">
+      <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginButtonWorksTest_Test1 - 2019.03.29 at 10h 31m 26s.xml">
+      <configuration name="LoginButtonWorksTest.Test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5755000" />
+    <option name="totallyTimeSpent" value="6311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="25" width="1696" height="1026" extended-state="0" />
@@ -1127,12 +1127,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LoginButtonWorksTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9859402">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.8963093">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
           </folding>
         </state>
       </provider>
