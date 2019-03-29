@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test website</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.js"></script>
+    <link rel="stylesheet" href="../public/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Test project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link home page" data-template="home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page" data-template="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page" data-template="user">Users</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="app"></div>
+      <script type="text/template" id="page-home-template">
+        <h3>My contacts</h3>
+        <div id="action"></div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>                                
+                <th scope="col">Actions</th>                                
+              </tr>
+            </thead>
+            <tbody>
+            {{#each this.contacts.contacts}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{first_name}}</td>
+                    <td>{{last_name}}</td>
+                    <td>{{gender}}</td>
+                    <td>{{email}}</td>
+                    <td>{{phone}}</td>
+                    <td>
+                        <button data-query="(state) => state.contacts.contacts" data-filter="id" data-filterBy={{id}} data-template="edit" class="btn btn-primary action">Edit</button>
+                        <button data-query="(state) => state.contacts.contacts"  data-filter="id" data-filterBy={{id}} data-template="delete" class="btn btn-danger action">Delete</button>
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+          </table>
+      </script>
+      <script type="text/template" id="action-home-edit-template">
+        <div class="container-fluid">
+            <h3>edit contact</h3>
+            <form id="contact-edit-form">
+                <div class="form-group">
+                    <input type="hidden" class="form-control" name="id" value={{this.id}}>
+                </div>
+                <div class="form-group">
+                    <label for="first_name">First</label>
+                    <input type="text" class="form-control" name="first_name" value={{this.first_name}}>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last</label>
+                    <input type="text" class="form-control" name="last_name" value={{this.last_name}}>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" name="gender" value={{this.gender}}>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" value={{this.email}}>
+                </div>        
+                <div class="form-group">
+                    <label for="phone">Email</label>
+                    <input type="text" class="form-control" name="phone" value={{this.phone}}>
+                </div>            
+                <button class="btn btn-primary" onclick="return window.UpdateContacts(event)" >Save</button>
+                </form>
+            </form>
+        </div>
+      </script>      
+      <script type="text/template" id="action-home-delete-template">        
+        <h3>delete contact</h3>
+        <p>Are you sure you want to delete contact</p>
+        <button class="btn btn-primary" data-id={{id}} onclick="return window.DeleteContact(event, {{id}})">Delete contact</button>
+      </script>     
+
+      <script type="text/template" id="page-about-template">
+        <h3>about page</h3>
+      </script>      
+      <script type="text/template" id="page-user-template">        
+        <h3>user page</h3>
+      </script>     
+      <script src="../public/api.js"></script>
+      <script>
+        (function ($) {
+            var page = "home";
+            $('.page').click(function (evt) {
+                evt.preventDefault();
+                var data = $(this).data("template");
+                page = data;
+                var template = $(`#page-${data}-template`).html();
+                var compile = Handlebars.compile(template);
+                $("#app").html(compile(window.api.getState()));
+            });
+            $('#app').on("click", ".action", function (evt, elem) {
+                evt.preventDefault();
+                var data = $(this).data("template");
+                var query = eval($(this).data("query"));
+                var filter = $(this).data("filter");
+                var filterby = $(this).data("filterby");
+                var template = $(`#action-${page}-${data}-template`).html();
+                var compile = Handlebars.compile(template);
+                var state = window.api.getState();
+                var filter = query(state).find(p => p[filter] === filterby);
+                $("#action").html(compile(filter));
+            });
+
+            this.window.UpdateContacts =  function(evt) {
+                var data={};
+                var newData = $("#contact-edit-form").serializeArray().map(x => {data[x.name] = x.value;});
+                console.log(data);
+                window.api.updateContact(window.api.getLoggedInUserId(), data);
+                $('.home').click();
+                return false;
+            }
+
+            this.window.DeleteContact = function(evt, id) {
+                debugger;
+                window.api.deleteContact(window.api.getLoggedInUserId(), id);
+                $('.home').click();
+                return false;
+            }
+            $('.home').click();
+        })(jQuery)
+      </script>
+</body>
+</html>
