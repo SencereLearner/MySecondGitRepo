@@ -87,6 +87,11 @@ const data = {
     ]
 };
 
+function setupUsers() {
+    data.users = window.localStorage.getItem("users") || data.users;
+    window.localStorage.setItem("users", data.users);
+}
+
 function getApi() {
     return data;
 }
@@ -113,7 +118,9 @@ function register(username, password) {
     if(result.length === 0 )
     {
         data.users.push({username, password});
+
     }
+    return undefined;
 }
 
 function forgot(username) {
@@ -152,6 +159,12 @@ function getState(userId) {
     return JSON.parse(window.localStorage.getItem("state"));
 }
 
+function getUserByLogin(userId) {
+    var result = data.users.filter(user => user.username === userId);
+    if(result.length == 0) return undefined;
+    return result[0];
+}
+
 window.api = {
     getApi,
     login,
@@ -161,7 +174,9 @@ window.api = {
     updateContact,
     deleteContact,
     getLoggedInUserId,
-    getState
+    getState,
+    getUserByLogin,
+    setupUsers
 };
 
 window.get = function getQueryVariable(variable)
