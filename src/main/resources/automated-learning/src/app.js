@@ -1,5 +1,4 @@
 (function ($) {
-    window.api.setupUsers();
    $('#user-loging').click(function (evt) {
         evt.preventDefault();
         var username = $("#login").val();

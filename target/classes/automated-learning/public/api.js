@@ -87,6 +87,11 @@ const data = {
     ]
 };
 
+function setupUsers() {
+    data.users = window.localStorage.getItem("users") || data.users;
+    window.localStorage.setItem("users", data.users);
+}
+
 function getApi() {
     return data;
 }
@@ -112,7 +117,8 @@ function register(username, password) {
     var result = data.users.filter(user => user.username == username && user.password == password);
     if(result.length === 0 )
     {
-        return data.users.push({username, password});
+        data.users.push({username, password});
+
     }
     return undefined;
 }
@@ -169,7 +175,8 @@ window.api = {
     deleteContact,
     getLoggedInUserId,
     getState,
-    getUserByLogin
+    getUserByLogin,
+    setupUsers
 };
 
 window.get = function getQueryVariable(variable)

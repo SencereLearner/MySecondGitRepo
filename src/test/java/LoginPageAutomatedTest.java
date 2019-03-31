@@ -30,6 +30,21 @@ public class LoginPageAutomatedTest {
         Assert.assertEquals("We are now logged in", "Test project", text);
     }
 
+//    @Test
+//    public void Test2() throws InterruptedException {
+//        _webdriver.get(LocalChromeWebDriver.GetWebUrl());
+//        Thread.sleep(3000); // 3seconds for the page to load
+//        // login
+//        _webdriver.findElement(By.linkText("Forgot Password?")).click();
+//
+//        Thread.sleep(3000); // 3seconds for the page to load
+//
+//        _webdriver.findElement(By.cssSelector("#login")).sendKeys("demo");
+//        _webdriver.findElement(By.id("user-forgot")).click();
+//
+//        _webdriver.switchTo().alert().accept();
+//    }
+
     @After
     public void tearDown() {
     }
