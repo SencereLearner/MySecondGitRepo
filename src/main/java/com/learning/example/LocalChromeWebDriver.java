@@ -14,7 +14,15 @@ public class LocalChromeWebDriver {
 
     public LocalChromeWebDriver() {
         try {
-            URL res = getClass().getClassLoader().getResource("chromedriver.exe");
+            String os = System.getProperty("os.name").toLowerCase();
+
+            URL res = null;
+            if (os.indexOf("win") >= 0) {
+                res = getClass().getClassLoader().getResource("chromedriver.exe");
+            } else if (os.indexOf("mac") >= 0) {
+                res = getClass().getClassLoader().getResource("chromedriver");
+            }
+
             File file = Paths.get(res.toURI()).toFile();
             String absolutePath = file.getAbsolutePath();
             System.setProperty("webdriver.chrome.driver", absolutePath);
