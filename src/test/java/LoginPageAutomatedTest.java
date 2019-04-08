@@ -19,11 +19,11 @@ public class LoginPageAutomatedTest {
 
     @Test
     public void Test1() throws InterruptedException {
-        _webdriver.get(LocalChromeWebDriver.GetWebUrl());
+        _webdriver.get("file:///"+LocalChromeWebDriver.GetWebUrl());
 
         // login
-        _webdriver.findElement(By.cssSelector("#login")).sendKeys("demo");
-        _webdriver.findElement(By.cssSelector("#password")).sendKeys("password123");
+        _webdriver.findElement(By.id("login")).sendKeys("demo");
+        _webdriver.findElement(By.id("password")).sendKeys("password123");
         _webdriver.findElement(By.id("user-loging")).click();
 
         String text = _webdriver.findElement(By.className("navbar-brand")).getText();
@@ -47,5 +47,6 @@ public class LoginPageAutomatedTest {
 
     @After
     public void tearDown() {
+        _webdriver.quit();
     }
 }
