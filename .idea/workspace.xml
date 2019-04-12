@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee1f7f35-0038-42e9-b685-abb8b54f65f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/example/LocalChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/example/LocalChromeWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver" afterDir="false" />
-    </list>
+    <list default="true" id="ee1f7f35-0038-42e9-b685-abb8b54f65f3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
               <folding>
                 <element signature="e#1631#1632#0" expanded="true" />
                 <element signature="e#1664#1665#0" expanded="true" />
@@ -78,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="810">
               <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
             </state>
           </provider>
@@ -103,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="-2179">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
@@ -112,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/learning/example/LocalChromeWebDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="386">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
@@ -132,8 +95,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
-    <option name="y" value="23" />
+    <option name="x" value="70" />
+    <option name="y" value="56" />
     <option name="width" value="1627" />
     <option name="height" value="1027" />
   </component>
@@ -277,12 +240,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.07 at 11h 06m 20s.xml">
-      <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.07 at 11h 15m 06s.xml">
-      <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.08 at 08h 35m 23s.xml">
       <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
     </history-entry>
@@ -307,9 +264,15 @@
     <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.08 at 08h 42m 10s.xml">
       <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.08 at 08h 50m 37s.xml">
+      <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageAutomatedTest_Test1 - 2019.04.08 at 08h 50m 50s.xml">
+      <configuration name="LoginPageAutomatedTest.Test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="23" width="1627" height="1027" extended-state="0" />
+    <frame x="70" y="56" width="1627" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -325,7 +288,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.315508" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.315508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,16 +316,23 @@
           <url>file://$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java</url>
           <line>24</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -380,31 +350,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2179">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/learning/example/LocalChromeWebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="386">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
           <folding>
             <element signature="e#1631#1632#0" expanded="true" />
             <element signature="e#1664#1665#0" expanded="true" />
