@@ -88,8 +88,21 @@ const data = {
 };
 
 function setupUsers() {
-    data.users = window.localStorage.getItem("users") || data.users;
-    window.localStorage.setItem("users", data.users);
+    var users = window.localStorage.getItem("users");
+    if(users === null)
+    {
+        window.localStorage.setItem("users", JSON.stringify(data.users));
+    }
+}
+
+function getUser() {
+    return JSON.parse(window.localStorage.getItem("users"));
+}
+
+function saveUser(user, password) {
+    var users = JSON.parse(window.localStorage.getItem("users"));
+    users.push({userId: guid(), username: user, password});
+    window.localStorage.setItem("users", JSON.stringify(users));
 }
 
 function getApi() {
@@ -97,7 +110,7 @@ function getApi() {
 }
 
 function login(username, password) {
-    var result = data.users.filter(user => user.username == username && user.password == password);
+    var result = getUser().filter(user => user.username == username && user.password == password);
     if(result.length == 0) return undefined;
     result = result[0];
     var state = buildState(result);
@@ -114,11 +127,10 @@ function buildState(user) {
 }
 
 function register(username, password) {
-    var result = data.users.filter(user => user.username == username && user.password == password);
+    var result = getUser().filter(user => user.username == username && user.password == password);
     if(result.length === 0 )
     {
-        data.users.push({username, password});
-
+        return saveUser(username, password);
     }
     return undefined;
 }
@@ -128,22 +140,54 @@ function forgot(username) {
     return result.length === 0 ? undefined : result[0];
 }
 
-function getContacts(userId) {
-    var result = data.contacts.filter(c => c.userId === userId);
-    return result.length === 0 ? undefined : result[0];
+function getContacts(userId) {    
+    var contacts = window.localStorage.getItem("contacts");
+    if(contacts === null)
+    {
+        window.localStorage.setItem("contacts", JSON.stringify(data.contacts));
+    }
+    contacts = JSON.parse(window.localStorage.getItem("contacts"));
+    var result = contacts.filter(c => c.userId === userId);
+    return result.length === 0 ? [] : result[0];
+}
+
+function addContact(userid, contact) {
+    debugger;
+    var contacts = JSON.parse(window.localStorage.getItem("contacts"));
+    var result = contacts.filter(c => c.userId === userid);
+    if(result.length === 0 )
+    {
+        contact.id = 1;
+        contacts.push({userId: userid, contacts: [contact]})
+    }
+    else
+    {
+        var ints = result[0].contacts.map(c => c.id);
+        var maxId = Math.max(...ints);
+        contact.id = ++maxId;
+        result[0].contacts.push(contact);
+        contacts = Object.assign(contacts, {userId: userid, contacts: result});
+    }
+    window.localStorage.setItem("contacts", JSON.stringify(contacts));
+    var state = buildState(getState(userid).logggedInUser);
+    window.localStorage.setItem("state", JSON.stringify(state));
 }
 
 function updateContact(userid, contact) {
-    contact.id = Number.parseInt(contact.id);
-    data.contacts.find(c => c.userId == userid).contacts[contact.id-1] = contact;
     debugger;
+    contact.id = Number.parseInt(contact.id);
+    var storedContacts = JSON.parse(window.localStorage.getItem("contacts"));
+    var result = storedContacts.filter(c => c.userId === userid)[0];
+    result.contacts[contact.id-1] = contact;
+    storedContacts = Object.assign(storedContacts, result);
+    window.localStorage.setItem("contacts", JSON.stringify(storedContacts));
     var state = buildState(getState(userid).logggedInUser);
     window.localStorage.setItem("state", JSON.stringify(state));
 }
 
 function deleteContact(userid, id) {
     var contact = data.contacts.find(c => c.userId == userid).contacts[id-1];
-    data.contacts.find(c => c.userId == userid).contacts = data.contacts.find(c => c.userId == userid).contacts.filter(function(ele){
+    getContacts().find(c => c.userId == userid).contacts = data.contacts.find(c => c.userId == userid).contacts.filter(function(ele){
         return ele != contact;
     });
     debugger;
@@ -170,6 +214,7 @@ window.api = {
     login,
     register,
     forgot,
+    addContact,
     getContacts,
     updateContact,
     deleteContact,
@@ -189,3 +234,13 @@ window.get = function getQueryVariable(variable)
        }
        return(false);
 };
+
+function guid() {
+    function s4() {
+      return Math.floor((1 + Math.random()) * 0x10000)
+        .toString(16)
+        .substring(1);
+    }
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+      s4() + '-' + s4() + s4() + s4();
+}
