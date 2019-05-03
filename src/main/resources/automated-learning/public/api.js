@@ -193,7 +193,7 @@ function deleteContact(userid, id) {
     var contact = data.contacts.find(c => c.userId == userid).contacts[id-1];
 
     result.contacts = result.contacts.filter(function(ele){
-        return ele != contact;
+        return ele.id != contact.id;
     });;
     window.localStorage.setItem("contacts", JSON.stringify(storedContacts));
     var state = buildState(getState(userid).logggedInUser);
