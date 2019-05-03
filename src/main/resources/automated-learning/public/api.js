@@ -102,7 +102,7 @@ function getUser() {
 function saveUser(user, password) {
     var users = JSON.parse(window.localStorage.getItem("users"));
     users.push({userId: guid(), username: user, password});
-    window.localStorage.setItem("users", JSON.stringify(users));
+    return window.localStorage.setItem("users", JSON.stringify(users));
 }
 
 function getApi() {
@@ -179,7 +179,6 @@ function updateContact(userid, contact) {
     var storedContacts = JSON.parse(window.localStorage.getItem("contacts"));
     var result = storedContacts.filter(c => c.userId === userid)[0];
     result.contacts[contact.id-1] = contact;
-    storedContacts = Object.assign(storedContacts, result);
     window.localStorage.setItem("contacts", JSON.stringify(storedContacts));
     var state = buildState(getState(userid).logggedInUser);
     window.localStorage.setItem("state", JSON.stringify(state));
