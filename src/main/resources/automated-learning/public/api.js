@@ -102,7 +102,8 @@ function getUser() {
 function saveUser(user, password) {
     var users = JSON.parse(window.localStorage.getItem("users"));
     users.push({userId: guid(), username: user, password});
-    return window.localStorage.setItem("users", JSON.stringify(users));
+    window.localStorage.setItem("users", JSON.stringify(users));
+    return {userId: guid(), username: user, password};
 }
 
 function getApi() {
@@ -185,11 +186,16 @@ function updateContact(userid, contact) {
 }
 
 function deleteContact(userid, id) {
-    var contact = data.contacts.find(c => c.userId == userid).contacts[id-1];
-    getContacts().find(c => c.userId == userid).contacts = data.contacts.find(c => c.userId == userid).contacts.filter(function(ele){
-        return ele != contact;
-    });
     debugger;
+
+    var storedContacts = JSON.parse(window.localStorage.getItem("contacts"));
+    var result = storedContacts.filter(c => c.userId === userid)[0];
+    var contact = data.contacts.find(c => c.userId == userid).contacts[id-1];
+
+    result.contacts = result.contacts.filter(function(ele){
+        return ele != contact;
+    });;
+    window.localStorage.setItem("contacts", JSON.stringify(storedContacts));
     var state = buildState(getState(userid).logggedInUser);
     window.localStorage.setItem("state", JSON.stringify(state));
 }
