@@ -27,10 +27,14 @@ public class Test {
     options.setHeadless(true);
     _webdriver = new ChromeDriver(options);
 
-//    options.addArguments("--disable-infobars");
-//    _webdriver = new ChromeDriver(options);
+    options.addArguments("--disable-infobars");
+    _webdriver = new ChromeDriver(options);
 
 
+    ///ksahkdjas
+
+
+    _webdriver.get("ljsrhkk");
     _webdriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
   }
 

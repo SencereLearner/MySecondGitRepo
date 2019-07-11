@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee1f7f35-0038-42e9-b685-abb8b54f65f3" name="Default Changelist" comment="My First Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/example/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/example/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BasicJavaLearning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ExcelSheetsFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/NewAutomationProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RandomPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SoftAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageAutomatedTest.java" afterDir="false" />
+    <list default="true" id="ee1f7f35-0038-42e9-b685-abb8b54f65f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/automated-learning/public/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/automated-learning/public/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/automated-learning/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/automated-learning/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/automated-learning/src/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/automated-learning/src/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="466">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,7 +156,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="56" />
     <option name="y" value="23" />
     <option name="width" value="1624" />
@@ -322,6 +307,14 @@
       <option name="presentableId" value="Default" />
       <updated>1554652582864</updated>
     </task>
+    <task id="LOCAL-00001" summary="My First Commit">
+      <created>1562807322723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562807322723</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -358,6 +351,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1624" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16561314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -672,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="466">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
