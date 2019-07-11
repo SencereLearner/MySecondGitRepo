@@ -11,6 +11,7 @@
             window.reload();
         }        
    });
+   
     window.ForgotPassword = function (event) {
         var login = $("#login").val();
         var user = window.api.getUserByLogin(login);
@@ -33,4 +34,5 @@
         window.location = "./index.html";
         return false;
     };
+    window.setupUsers();
 })(jQuery);
