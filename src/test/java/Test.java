@@ -23,18 +23,8 @@ public class Test {
   public void Before (){
     System.setProperty("webdriver.chrome.driver", "/Users/firstlast/Desktop/SELENIUM/ChromeDriver/chromedriver");
     _webdriver = new ChromeDriver();
-    ChromeOptions options = new ChromeOptions();
-    options.setHeadless(true);
-    _webdriver = new ChromeDriver(options);
-
-    options.addArguments("--disable-infobars");
-    _webdriver = new ChromeDriver(options);
 
 
-    ///ksahkdjas
-
-
-    _webdriver.get("ljsrhkk");
     _webdriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
   }
 
@@ -42,26 +32,24 @@ public class Test {
 
   public void Test1 () throws InterruptedException {
 
-    _webdriver.get("https://vk.com");
-    String parent = _webdriver.getWindowHandle();
-    BaseClass.OpenLinkInNewTab(_webdriver, "https://google.com");
+    _webdriver.get("https://google.com");
 
-    Set<String> allTabs = _webdriver.getWindowHandles();
-    int countTabs = allTabs.size();
-    System.out.println("Total open tabs are: " + countTabs);
+    List<WebElement> links=_webdriver.findElements(By.tagName("a"));
 
-    for (String child:allTabs){
-      if (!parent.equalsIgnoreCase(child)){
-      _webdriver.switchTo().window(child);
-      _webdriver.findElement(By.name("q")).sendKeys("Hare Krishna");
+    System.out.println("Total links are "+links.size());
+
+    for(int i=0;i<links.size();i++)
+    {
+
+      WebElement ele= links.get(i);
+
+      String url=ele.getAttribute("href");
+
+      BaseClass.verifyBrokenLinks(url);
+
     }
-    }
-    int x = _webdriver.findElement(By.name("q")).getLocation().getX();
-    int y = _webdriver.findElement(By.name("q")).getLocation().getY();
-    System.out.println("The ipput field location is: X = " + x + " Y = " + y);
-    Thread.sleep(1500);
 
-
+//success comment
 
 
 
